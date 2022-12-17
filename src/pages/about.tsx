@@ -1,15 +1,15 @@
 import * as React from "react";
 import Navbar from "../components/Navbar";
 
-const IndexPage = () => {
+const About = () => {
   return (
     <section>
       <Navbar />
       <div>
-        <h1>Home</h1>
+        <h1>About</h1>
       </div>
     </section>
   );
 };
 
-export default IndexPage;
+export default About;
