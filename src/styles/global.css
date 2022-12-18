@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+:root {
+  /* Text Size */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 36px;
+  --text-5xl: 48px;
+  --text-6xl: 60px;
+  --text-7xl: 72px;
+  --text-8xl: 96px;
+
+  --weight-reg: 400;
+  --weight-med: 500;
+  --weight-bold: 700;
+
+  --neutral-50: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-300: #d4d4d4;
+  --neutral-400: #a3a3a3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
+  --neutral-900: #171717;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Inter";
+}
+
+html,
+body {
+  min-height: 100%;
+}
+body {
+  background-color: white;
+}
+
+p {
+  margin: 16px auto;
+}
+
+/* Layout */
+.layout {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  width: auto;
+  padding: 24px 0px 0px 0px;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLinks {
+  padding: 0px 20px 0px 20px;
+  font-size: var(--text-base);
+  font-weight: var(--weight-med);
+}
+
+/* Breakpoint-md */
+@media only screen and (min-width: 0px) {
+  .navbar {
+    padding: 24px 16px 0px 16px;
+  }
+}
+
+/* Breakpoint-md */
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 24px 24px 0px 24px;
+  }
+}
+
+/* Breakpoint-lg */
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    padding: 24px 64px 0px 64px;
+  }
+}
+
+/* Breakpoint-xl */
+@media only screen and (min-width: 1280px) {
+  .navbar {
+    padding: 24px 112px 0px 112px;
+  }
+}
+
+/* Breakpoint-2xl */
+@media only screen and (min-width: 1536px) {
+  .navbar {
+    padding: 24px 128px 0px 128px;
+  }
+}
+
+/* Footer */
+.footer {
+  align-content: center;
+  padding: 80px 0px 80px 0px;
+  background-color: var(--neutral-900);
+}
+
+.footerIcons {
+  text-align: center;
+  color: white;
+}
+
+.footerText {
+  font-size: var(--text-base);
+  text-align: center;
+  color: var(--neutral-500);
+}

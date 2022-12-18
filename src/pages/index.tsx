@@ -1,14 +1,13 @@
 import * as React from "react";
-import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
 
 const IndexPage = () => {
   return (
-    <section>
-      <Navbar />
+    <Layout>
       <div>
-        <h1>Home</h1>
+        <h1>This is a content area</h1>
       </div>
-    </section>
+    </Layout>
   );
 };
 

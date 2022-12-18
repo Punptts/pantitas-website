@@ -1,14 +1,13 @@
 import * as React from "react";
-import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
 
 const Projects = () => {
   return (
-    <section>
-      <Navbar />
+    <Layout>
       <div>
-        <h1>Project</h1>
+        <h1>This is a content area</h1>
       </div>
-    </section>
+    </Layout>
   );
 };
 
