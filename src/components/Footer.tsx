@@ -1,14 +1,14 @@
 import * as React from "react";
 import "../styles/global.css";
-import RTFSD from "../images/RTFSD-logo.png";
+import logo from "../images/logo.png";
 
 export default function Footer() {
   return (
     <footer className="footer">
-      <img className="global-logo" src={RTFSD} alt="logo" />
+      <img className="global-logo" src={logo} alt="logo" />
       <div>
-        <h4 className="footer-item">Explore · Research · Design</h4>
-        <h4 className="footer-item">2022 I © punptts</h4>
+        <p className="footer-item">Explore · Research · Design</p>
+        <p className="footer-item">2022 I © Pantitas</p>
       </div>
     </footer>
   );
