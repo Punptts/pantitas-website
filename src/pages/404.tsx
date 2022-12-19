@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 const NotFound = () => {
   return (
     <Layout>
-      <div>
+      <div className="container">
         <h1>This page is not found</h1>
       </div>
     </Layout>

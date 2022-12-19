@@ -4,8 +4,8 @@ import Layout from "../components/Layout";
 const Projects = () => {
   return (
     <Layout>
-      <div>
-        <h1>This is a content area</h1>
+      <div className="container">
+        <h1>This is a content area of projects page</h1>
       </div>
     </Layout>
   );

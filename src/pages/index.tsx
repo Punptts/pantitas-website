@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 const IndexPage = () => {
   return (
     <Layout>
-      <div>
+      <div className="container">
         <h1>This is a content area</h1>
       </div>
     </Layout>

@@ -1,17 +1,15 @@
 import * as React from "react";
 import "../styles/global.css";
+import RTFSD from "../images/RTFSD-logo.png";
 
 export default function Footer() {
   return (
-    <div>
-      <footer className="footer">
-        <ul className="footerIcons">
-          <img src="../images/icon.png" alt="icon1" />
-          <img src="../images/icon.png" alt="icon2" />
-          <img src="../images/icon.png" alt="icon3" />
-        </ul>
-        <p className="footerText"> Copyright © Pantitas 2022.</p>
-      </footer>
-    </div>
+    <footer className="footer">
+      <img className="global-logo" src={RTFSD} alt="logo" />
+      <div>
+        <h4 className="footer-item">Explore · Research · Design</h4>
+        <h4 className="footer-item">2022 I © punptts</h4>
+      </div>
+    </footer>
   );
 }
