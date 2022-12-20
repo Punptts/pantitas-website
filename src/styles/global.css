@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Layout */
 body {
   margin: 0;
@@ -17,38 +21,38 @@ body {
   justify-content: space-between;
 }
 
-/* Breakpoint-md */
+/* Breakpoint-sm */
 @media only screen and (min-width: 0px) {
   .container {
-    padding: 24px 16px 0px 16px;
+    padding: 0px 16px 0px 16px;
   }
 }
 
 /* Breakpoint-md */
 @media only screen and (min-width: 768px) {
   .container {
-    padding: 24px 24px 0px 24px;
+    padding: 0px 24px 0px 24px;
   }
 }
 
 /* Breakpoint-lg */
 @media only screen and (min-width: 1024px) {
   .container {
-    padding: 24px 64px 0px 64px;
+    padding: 0px 64px 0px 64px;
   }
 }
 
 /* Breakpoint-xl */
 @media only screen and (min-width: 1280px) {
   .container {
-    padding: 24px 112px 0px 112px;
+    padding: 0px 112px 0px 112px;
   }
 }
 
 /* Breakpoint-2xl */
 @media only screen and (min-width: 1536px) {
   .container {
-    padding: 24px 128px 0px 128px;
+    padding: 0px 128px 0px 128px;
   }
 }
 
@@ -64,11 +68,13 @@ body {
 
 .navbar-item {
   padding-left: 24px;
+  text-decoration: none;
   font-size: var(--text-base);
   font-weight: var(--weight-med);
+  color: var(--color-neutral-900);
 }
 
-/* Breakpoint-md */
+/* Breakpoint-sm */
 @media only screen and (min-width: 0px) {
   .navbar {
     padding: 24px 16px 0px 16px;
