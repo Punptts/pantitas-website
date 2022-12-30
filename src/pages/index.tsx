@@ -19,7 +19,7 @@ const IndexPage = () => {
                 I am a UX/UI Designer, who is always curious and hungry for an
                 adventure of designing things.
               </p>
-              <Button></Button>
+              <Button title="About Me" />
             </div>
             <div class="flex flex-col justify-center pl-10">
               <p>icon</p>

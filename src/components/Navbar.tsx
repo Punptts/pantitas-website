@@ -9,13 +9,13 @@ export default function Navbar() {
       <img className="global-logo" src={logo} alt="logo" />
       <div class="flex flex-row items-center">
         <Link className="navbar-item" to="/">
-          Home
+          PROJECT
         </Link>
-        <Link className="navbar-item" to="/projects">
+        {/* <Link className="navbar-item" to="/projects">
           Projects
-        </Link>
+        </Link> */}
         <Link className="navbar-item" to="/about">
-          About
+          ABOUT
         </Link>
       </div>
     </nav>
