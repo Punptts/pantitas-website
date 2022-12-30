@@ -3,12 +3,16 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import "../styles/global.css";
 
-export default function Layout({ children }) {
+type Layout = {
+  children: any;
+};
+
+export default function Layout({ children }: Layout) {
   return (
-    <div className="layout">
+    <>
       <Navbar />
-      <div>{children}</div>
+      <main>{children}</main>
       <Footer />
-    </div>
+    </>
   );
 }

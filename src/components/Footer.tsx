@@ -5,10 +5,10 @@ import logo from "../images/logo.png";
 export default function Footer() {
   return (
     <footer className="footer">
-      <img className="global-logo" src={logo} alt="logo" />
-      <div>
-        <p className="footer-item">Explore · Research · Design</p>
-        <p className="footer-item">2022 I © Pantitas</p>
+      <div className="footer-item">
+        <img className="global-logo" src={logo} alt="logo" />
+        <p>Explore · Research · Design</p>
+        <p>2022 I © Pantitas</p>
       </div>
     </footer>
   );

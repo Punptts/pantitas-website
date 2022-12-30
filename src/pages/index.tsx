@@ -4,10 +4,9 @@ import Layout from "../components/Layout";
 const IndexPage = () => {
   return (
     <Layout>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <div className="container">
+      <section className="section">
         <h1>This is a content area</h1>
-      </div>
+      </section>
     </Layout>
   );
 };

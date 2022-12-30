@@ -13,120 +13,28 @@ body {
   background-image: url("../images/dotted-bg.png");
 }
 
-/* Container */
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Breakpoint-sm */
-@media only screen and (min-width: 0px) {
-  .container {
-    padding: 0px 16px 0px 16px;
-  }
-}
-
-/* Breakpoint-md */
-@media only screen and (min-width: 768px) {
-  .container {
-    padding: 0px 24px 0px 24px;
-  }
-}
-
-/* Breakpoint-lg */
-@media only screen and (min-width: 1024px) {
-  .container {
-    padding: 0px 64px 0px 64px;
-  }
-}
-
-/* Breakpoint-xl */
-@media only screen and (min-width: 1280px) {
-  .container {
-    padding: 0px 112px 0px 112px;
-  }
-}
-
-/* Breakpoint-2xl */
-@media only screen and (min-width: 1536px) {
-  .container {
-    padding: 0px 128px 0px 128px;
-  }
+/* Section */
+.section {
+  @apply min-h-screen flex flex-col justify-between py-0 px-4 md:px-6 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto;
 }
 
 /* Navbar */
 .navbar {
-  width: auto;
-  padding: 24px 0px 0px 0px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  @apply w-auto flex flex-row justify-between py-10 px-4 md:px-6 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto;
 }
 
 .navbar-item {
-  padding-left: 24px;
-  text-decoration: none;
-  font-size: var(--text-base);
-  font-weight: var(--weight-med);
-  color: var(--color-neutral-900);
+  @apply text-base font-medium text-neutral-900 pl-8;
 }
 
-/* Breakpoint-sm */
-@media only screen and (min-width: 0px) {
-  .navbar {
-    padding: 24px 16px 0px 16px;
-  }
-}
-
-/* Breakpoint-md */
-@media only screen and (min-width: 768px) {
-  .navbar {
-    padding: 24px 24px 0px 24px;
-  }
-}
-
-/* Breakpoint-lg */
-@media only screen and (min-width: 1024px) {
-  .navbar {
-    padding: 24px 64px 0px 64px;
-  }
-}
-
-/* Breakpoint-xl */
-@media only screen and (min-width: 1280px) {
-  .navbar {
-    padding: 24px 112px 0px 112px;
-  }
-}
-
-/* Breakpoint-2xl */
-@media only screen and (min-width: 1536px) {
-  .navbar {
-    padding: 24px 128px 0px 128px;
-  }
-}
-
-/* Footer */
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--color-primary);
-  padding: 40px 10%;
+  @apply flex flex-col justify-between bg-neutral-900 py-16;
 }
 
 .footer-item {
-  display: flex;
-  justify-content: center;
-  margin-top: var(--length-sm2);
-  font-size: var(--length-md1);
-  color: var(--color-label);
+  @apply flex flex-col text-lg items-center text-neutral-400;
 }
 
 .global-logo {
-  height: var(--length-lg2);
+  @apply h-12 w-12;
 }
