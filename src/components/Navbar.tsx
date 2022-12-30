@@ -11,8 +11,8 @@ export default function Navbar() {
         <Link className="navbar-item" to="/">
           PROJECT
         </Link>
-        {/* <Link className="navbar-item" to="/projects">
-          Projects
+        {/* <Link className="navbar-item" to="/blog">
+          BLOG
         </Link> */}
         <Link className="navbar-item" to="/about">
           ABOUT

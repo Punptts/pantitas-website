@@ -40,3 +40,12 @@ body {
 .global-logo {
   @apply h-12 w-12;
 }
+
+/* Profile */
+.profile {
+  align-items: center;
+  border: #1e1e1e solid 4px;
+  border-radius: 50%;
+  height: 260px;
+  width: 260px;
+}
