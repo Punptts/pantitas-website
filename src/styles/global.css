@@ -15,8 +15,12 @@ body {
 
 /* Section */
 .section {
-  @apply min-h-screen flex flex-col justify-between py-0 px-4 md:px-6 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto;
+  @apply min-h-screen flex flex-col justify-between;
 }
+
+/* .section-padding {
+  @apply py-16 px-4 md:px-6 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto;
+} */
 
 /* Navbar */
 .navbar {

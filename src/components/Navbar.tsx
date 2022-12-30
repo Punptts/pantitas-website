@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import "../styles/global.css";
 import logo from "../images/logo.png";
 
-export default function navbar() {
+export default function Navbar() {
   return (
     <nav className="navbar">
       <img className="global-logo" src={logo} alt="logo" />
