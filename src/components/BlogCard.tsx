@@ -2,16 +2,16 @@ import { type } from "os";
 import React from "react";
 
 type BlogCardProps = {
+  coverImage: string;
   title: string;
-  image: string;
   desc: string;
 };
 
-export default function BlogCard({ title, image, desc }: BlogCardProps) {
+export default function BlogCard({ title, coverImage, desc }: BlogCardProps) {
   return (
     <div className=" px-4">
-      <div className=" w-auto h-44 bg-neutral-900">
-        <img src={image} alt="" />
+      <div className="!aspect-w-16 !aspect-h-9 h-44 bg-neutral-900">
+        <img src={coverImage} alt="cover-img" />
       </div>
       <div>
         <h2 className=" text-2xl font-medium text-neutral-900 pt-4">{title}</h2>

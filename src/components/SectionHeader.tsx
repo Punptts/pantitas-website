@@ -9,7 +9,7 @@ type HeaderProps = {
 export default function SectionHeader({ title, textClassName }: HeaderProps) {
   return (
     <div>
-      <h2 class="flex justify-center text-2xl font-bold">{title}</h2>
+      <h2 className="flex justify-center text-2xl font-bold">{title}</h2>
     </div>
   );
 }
