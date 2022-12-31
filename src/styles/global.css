@@ -10,7 +10,7 @@ body {
   padding: 0;
   text-decoration: none;
   font-family: "Inter";
-  background-image: url("../images/dotted-bg.png");
+  background-image: url("/images/dotted-bg.png");
 }
 
 /* Section */

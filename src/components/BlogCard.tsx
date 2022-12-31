@@ -10,7 +10,7 @@ type BlogCardProps = {
 export default function BlogCard({ title, coverImage, desc }: BlogCardProps) {
   return (
     <div className=" px-4">
-      <div className="!aspect-w-16 !aspect-h-9 h-44 bg-neutral-900">
+      <div className="!aspect-w-16 !aspect-h-9 bg-neutral-900">
         <img src={coverImage} alt="cover-img" />
       </div>
       <div>

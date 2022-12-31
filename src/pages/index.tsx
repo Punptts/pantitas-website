@@ -2,18 +2,25 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import Button from "../components/Button";
 import BlogCard from "../components/BlogCard";
-import "../styles/index.css";
-import logo from "../images/logo.png";
 import SectionHeader from "../components/SectionHeader";
 import ProjectCard from "../components/ProjectCard";
+import "../styles/index.css";
+import { graphql, PageProps, Link } from "gatsby";
 
-const IndexPage = () => {
+type IndexPage = PageProps;
+
+const IndexPage = ({ data }: PageProps) => {
+  /* @ts-ignore */
+  const { blogs, projects } = data;
+  const { edges: allBlogs } = blogs;
+  const { edges: allProjects } = projects;
+
   return (
     <Layout>
       {/* Section 1: Welcome */}
       <section>
         <div className="flex flex-col lg:flex-row space-between pt-16 px-4 md:px-6 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
-          <img src={logo} className="profile" alt="logo" />
+          <img src="/images/logo.png" className="profile" alt="logo" />
           <div className="flex">
             <div className="flex flex-col justify-center pl-12">
               <p className="text-xl">Hey Friends, I am</p>
@@ -37,21 +44,19 @@ const IndexPage = () => {
         <div className="pt-32 px-4 md:px-6 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
           <SectionHeader title="Latest Experiment" />
           <div className="flex flex-row justify-between pt-10">
-            <BlogCard
-              title="Title here..."
-              image="../images/blogs/image1.jpeg"
-              desc="Write some description about the card here something..."
-            />
-            <BlogCard
-              title="Title here..."
-              image="../images/blogs/image1.jpeg"
-              desc="Write some description about the card here something..."
-            />
-            <BlogCard
-              title="Title here..."
-              image="../images/blogs/image1.jpeg"
-              desc="Write some description about the card here something..."
-            />
+            {allBlogs.map(({ node }: any, key: any) => {
+              const { frontmatter } = node;
+              const { title, description, cover, slug } = frontmatter;
+              return (
+                <Link to={slug} key={key}>
+                  <BlogCard
+                    title={title}
+                    coverImage={cover}
+                    desc={description}
+                  />
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -60,24 +65,20 @@ const IndexPage = () => {
         <div className="py-32 px-4 md:px-6 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
           <SectionHeader title="All Projects" />
           <div className="flex flex-col justify-between pt-10">
-            <ProjectCard
-              title="Title here..."
-              image="../images/blogs/image1.jpeg"
-              desc="Write some description about the card here something...Write some description about the card here something..."
-              timeline="1st December - 31th December 2022"
-            />
-            <ProjectCard
-              title="Title here..."
-              image="../images/blogs/image1.jpeg"
-              desc="Write some description about the card here something...Write some description about the card here something..."
-              timeline="1st December - 31th December 2022"
-            />
-            <ProjectCard
-              title="Title here..."
-              image="../images/blogs/image1.jpeg"
-              desc="Write some description about the card here something...Write some description about the card here something..."
-              timeline="1st December - 31th December 2022"
-            />
+            {allProjects.map(({ node }: any, key: any) => {
+              const { frontmatter } = node;
+              const { title, description, cover, timeline, slug } = frontmatter;
+              return (
+                <Link to={slug} key={key}>
+                  <ProjectCard
+                    title={title}
+                    image={cover}
+                    desc={description}
+                    timeline={timeline}
+                  />
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -86,3 +87,38 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export const query = graphql`
+  query IndexPage {
+    blogs: allMarkdownRemark(
+      filter: { frontmatter: { slug: { regex: "/blog/" } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            description
+            cover
+            slug
+          }
+        }
+      }
+    }
+
+    projects: allMarkdownRemark(
+      filter: { frontmatter: { slug: { regex: "/project/" } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            description
+            cover
+            timeline
+            slug
+          }
+        }
+      }
+    }
+  }
+`;

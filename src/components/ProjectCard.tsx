@@ -17,7 +17,7 @@ export default function ProjectCard({
   return (
     <div className="flex flex-row py-4">
       <div className="w-1/2 h-52 bg-neutral-900">
-        <img src={image} alt="" />
+        <img src={image} alt="" className="w-full h-full object-cover" />
       </div>
       <div className="flex flex-col justify-center pl-8">
         <h2 className=" text-2xl font-medium text-neutral-900">{title}</h2>
