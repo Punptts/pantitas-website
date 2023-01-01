@@ -11,7 +11,7 @@ const MarkdownTemplate = ({ data }: MarkdownTemplateProps) => {
 
   return (
     <Layout>
-      <section className="relative px-4 md:px-6 lg:px-16 py-10 lg:py-20 max-w-4xl mx-auto">
+      <section className="relative lg:flex-row space-between pt-16 px-4 md:px-6 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
         <h1 className="font-bold text-2xl lg:text-3xl text-neutral-900">
           {title}
         </h1>
