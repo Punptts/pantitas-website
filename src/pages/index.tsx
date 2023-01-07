@@ -49,12 +49,12 @@ const IndexPage = ({ data }: PageProps) => {
       <section>
         <div className="pt-24 px-4 md:px-6 md:pt-32 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
           <SectionHeader title="Latest Experiment" />
-          <div className="flex flex-row justify-between pt-10">
+          <div className="flex flex-col md:flex-row flex-wrap justify-between pt-10">
             {allBlogs.map(({ node }: any, key: any) => {
               const { frontmatter } = node;
               const { title, description, cover, slug } = frontmatter;
               return (
-                <Link to={slug} key={key}>
+                <Link className="w-full md:w-1/2" to={slug} key={key}>
                   <BlogCard
                     title={title}
                     coverImage={cover}
