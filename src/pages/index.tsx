@@ -19,29 +19,35 @@ const IndexPage = ({ data }: PageProps) => {
     <Layout>
       {/* Section 1: Welcome */}
       <section>
-        <div className="flex flex-col lg:flex-row space-between pt-16 px-4 md:px-6 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
-          <img src="/images/logo.png" className="profile" alt="logo" />
-          <div className="flex">
-            <div className="flex flex-col justify-center pl-12">
+        <div className="flex flex-col items-center pt-8 px-4 md:flex-row space-between md:h-auto md:pt-16 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
+          <img
+            src="/images/logo.png"
+            className="profile w-48 h-48 md:w-64 md:h-64"
+            alt="logo"
+          />
+          <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col pt-10 pl-0 items-center md:pt-0 justify-center md:pl-12 md:items-start">
               <p className="text-xl">Hey Friends, I am</p>
-              <p className="text-5xl font-semibold pt-6">Pantita Suksa-nga</p>
-              <p className="text-xl py-6 text-neutral-600">
+              <p className="text-4xl text-center font-semibold pt-5 lg:text-5xl lg:text-left">
+                Pantita Suksa-nga
+              </p>
+              <p className="text-lg text-center py-5 text-neutral-600 lg:text-xl md:text-left">
                 I am a Ux/Ui Designer, who is always curious and hungry for an
                 adventure of designing things.
               </p>
               <Button title="About Me" />
             </div>
-            <div className="flex flex-col justify-center pl-12">
-              <p>icon</p>
-              <p>icon</p>
-              <p>icon</p>
+            <div className="flex flex-row pt-10 md:flex-col justify-center md:pt-0 md:pl-12">
+              <p className="w-10 h-10 bg-neutral-500">icon</p>
+              <p className="w-10 h-10 bg-neutral-400">icon</p>
+              <p className="w-10 h-10 bg-neutral-300">icon</p>
             </div>
           </div>
         </div>
       </section>
       {/* Section 1: BlogCards */}
       <section>
-        <div className="pt-32 px-4 md:px-6 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
+        <div className="pt-24 px-4 md:px-6 md:pt-32 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
           <SectionHeader title="Latest Experiment" />
           <div className="flex flex-row justify-between pt-10">
             {allBlogs.map(({ node }: any, key: any) => {
