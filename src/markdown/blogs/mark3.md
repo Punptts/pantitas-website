@@ -1,9 +1,9 @@
 ---
-title: BLOG 3
-description: BLOG 3 DESC
-slug: /blog/mark3
-cover: /images/blogs/image1.jpeg
-date: 2022-12-31
+title: กระบวนการคิดเชิงออกแบบ (Design Thinking)
+description: กระบวนการคิดเชิงออกแบบ หรือ Design Thinking คือขั้นตอนแรกและสำคัญที่สุดในการออกแบบ UX design กระบวนการนี้มีประโยชน์มากในการช่วยให้ผู้ออกแบบมองเห็นวิธีการแก้ปัญหาใหม่ๆ เช่น การคิดเชิงสร้างสรรค์ การคิดเพื่อแก้ปัญหา รวมไปถึงการคิดที่ช่วยสร้างนวัตกรรมที่สามารถตอบโจทย์ผู้ใช้งาน
+slug: /blog/design-thinking
+cover: /images/blogs/image3.jpeg
+date: 2023-01-03
 ---
 
 BLOG 3

@@ -52,13 +52,14 @@ const IndexPage = ({ data }: PageProps) => {
           <div className="flex flex-col md:flex-row flex-wrap justify-between pt-10">
             {allBlogs.map(({ node }: any, key: any) => {
               const { frontmatter } = node;
-              const { title, description, cover, slug } = frontmatter;
+              const { title, description, cover, slug, date } = frontmatter;
               return (
-                <Link className="w-full md:w-1/2" to={slug} key={key}>
+                <Link className="w-full md:w-1/2 lg:w-1/3" to={slug} key={key}>
                   <BlogCard
                     title={title}
                     coverImage={cover}
                     desc={description}
+                    createdAt={date}
                   />
                 </Link>
               );
@@ -106,6 +107,7 @@ export const query = graphql`
             description
             cover
             slug
+            date(formatString: "YYYY MMMM DD")
           }
         }
       }
