@@ -19,7 +19,13 @@ const MarkdownTemplate = ({ data }: MarkdownTemplateProps) => {
           <h2 className="font-bold text-2xl">TIMELINE: {timeline}</h2>
         )}
         <h2 className="text-sm text-neutral-600 mt-2">{date}</h2>
-        <img src={cover} alt="cover-img" className="w-96 h-96" />
+        <div className="aspect-w-16 aspect-h-9">
+          <img
+            src={cover}
+            alt="cover-img"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div
           dangerouslySetInnerHTML={{ __html: html || "<div />" }}
           className="mt-10 markdown"

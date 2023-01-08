@@ -16,7 +16,7 @@ export default function BlogCard({
 }: BlogCardProps) {
   return (
     <div className="py-6 md:px-4">
-      <div className="!aspect-w-16 !aspect-h-9">
+      <div className="aspect-w-16 aspect-h-9">
         <img
           className="w-full h-full object-cover rounded-lg"
           src={coverImage}

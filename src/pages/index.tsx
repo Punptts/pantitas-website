@@ -65,6 +65,9 @@ const IndexPage = ({ data }: PageProps) => {
               );
             })}
           </div>
+          {/* <div className="text-center pt-4">
+            <Button title="See More" />
+          </div> */}
         </div>
       </section>
       {/* Section 1: ProjectCards */}
@@ -76,7 +79,7 @@ const IndexPage = ({ data }: PageProps) => {
               const { frontmatter } = node;
               const { title, description, cover, timeline, slug } = frontmatter;
               return (
-                <Link to={slug} key={key}>
+                <Link className="w-full" to={slug} key={key}>
                   <ProjectCard
                     title={title}
                     image={cover}
