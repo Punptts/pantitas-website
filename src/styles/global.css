@@ -47,3 +47,37 @@ body {
   border: #1e1e1e solid 4px;
   border-radius: 50%;
 }
+
+/* Markdown */
+
+.markdown h1 {
+  @apply text-4xl font-bold text-neutral-900 leading-relaxed my-6 scroll-mt-16 lg:scroll-mt-0;
+}
+
+.markdown h2 {
+  @apply text-3xl text-neutral-900 font-bold leading-relaxed my-6 scroll-mt-16 lg:scroll-mt-0;
+}
+
+.markdown h3 {
+  @apply text-2xl text-neutral-900 font-bold leading-relaxed my-5 scroll-mt-16 lg:scroll-mt-0;
+}
+
+.markdown h4 {
+  @apply text-xl text-neutral-900 font-bold leading-relaxed my-6 scroll-mt-16 lg:scroll-mt-0;
+}
+
+.markdown h5 {
+  @apply text-base text-neutral-900 font-bold leading-relaxed my-6 scroll-mt-16 lg:scroll-mt-0;
+}
+
+.markdown h6 {
+  @apply text-sm text-neutral-900 font-bold leading-relaxed my-6 scroll-mt-16 lg:scroll-mt-0;
+}
+
+.markdown p {
+  @apply my-5 text-lg font-normal text-neutral-900 leading-relaxed;
+}
+
+.markdown strong {
+  @apply font-bold;
+}
