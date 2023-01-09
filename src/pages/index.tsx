@@ -5,6 +5,7 @@ import BlogCard from "../components/BlogCard";
 import SectionHeader from "../components/SectionHeader";
 import ProjectCard from "../components/ProjectCard";
 import "../styles/index.css";
+import InstagramSVG from "../icons/instagram.inline.svg";
 import { graphql, PageProps, Link } from "gatsby";
 
 type IndexPage = PageProps;
