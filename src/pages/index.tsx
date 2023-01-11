@@ -6,6 +6,8 @@ import SectionHeader from "../components/SectionHeader";
 import ProjectCard from "../components/ProjectCard";
 import "../styles/index.css";
 import InstagramSVG from "../icons/instagram.inline.svg";
+import MediumSVG from "../icons/medium.inline.svg";
+import LinkedInSVG from "../icons/linkedin.inline.svg";
 import { graphql, PageProps, Link } from "gatsby";
 
 type IndexPage = PageProps;
@@ -38,10 +40,10 @@ const IndexPage = ({ data }: PageProps) => {
               </p>
               <Button title="About Me" />
             </div>
-            <div className="flex flex-row pt-10 md:flex-col justify-center md:pt-0 md:pl-12">
-              <p className="w-10 h-10 bg-neutral-500">icon</p>
-              <p className="w-10 h-10 bg-neutral-400">icon</p>
-              <p className="w-10 h-10 bg-neutral-300">icon</p>
+            <div className="flex flex-row pt-12 md:flex-col justify-center md:pt-0 md:pl-12">
+              <InstagramSVG className="h-10 w-10 mx-6" />
+              <MediumSVG className="h-10 w-10 mx-6 md:mt-8" />
+              <LinkedInSVG className="h-10 w-10 mx-6 md:mt-8" />
             </div>
           </div>
         </div>
