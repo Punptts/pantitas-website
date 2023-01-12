@@ -1,6 +1,6 @@
 import path from "path";
 
-export const createPages = async ({ graphql, actions }) => {
+export const createPages = async ({ graphql, actions }:any) => {
   const { data, errors } = await graphql(`
     {
       allMarkdownRemark {
@@ -20,9 +20,10 @@ export const createPages = async ({ graphql, actions }) => {
   }
 
   /* @ts-ignore */
+  
   const { allMarkdownRemark } = data || {};
 
-  allMarkdownRemark?.edges.forEach(({ node }) => {
+  allMarkdownRemark?.edges.forEach(({ node }:any) => {
     const { frontmatter } = node;
     const { slug } = frontmatter;
 
