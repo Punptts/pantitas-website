@@ -6,4 +6,6 @@ cover: /images/blogs/image1.jpeg
 date: 2023-01-01
 ---
 
-# Hello world
+# About Me
+
+My name is Pantiita Suksa-nga

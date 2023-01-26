@@ -7,14 +7,18 @@ const About = ({ data }: PageProps) => {
   const html = data.markdownRemark.html;
   return (
     <Layout>
-      <div className="section">
-        <h1>This is a content area of about page</h1>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: html || "<div />",
-          }}
-          className="mt-8 about"
-        />
+      <div className="pt-8 px-4 md:flex-row space-between md:h-auto md:pt-16 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
+        <div className="flex flex-row pb-32">
+          <div className="section h-40 w-full bg-black mx-4 px-8"></div>
+          <div className="section w-full mx-4 px-8">
+            <div
+              dangerouslySetInnerHTML={{
+                __html: html || "<div />",
+              }}
+              className="about"
+            />
+          </div>
+        </div>
       </div>
     </Layout>
   );

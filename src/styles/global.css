@@ -51,7 +51,7 @@ body {
 /* Markdown */
 
 .about h1 {
-  @apply text-4xl font-bold text-red-500 leading-relaxed my-6 scroll-mt-16 lg:scroll-mt-0;
+  @apply text-4xl font-bold text-red-500 leading-relaxed scroll-mt-16 lg:scroll-mt-0;
 }
 
 .markdown h1 {
