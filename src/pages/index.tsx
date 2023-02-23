@@ -38,12 +38,23 @@ const IndexPage = ({ data }: PageProps) => {
                 I am a Ux/Ui Designer, who is always curious and hungry for an
                 adventure of designing things.
               </p>
-              <Button title="About Me" />
+              <a href="http://localhost:8000/about/">
+                <Button title="About Me" />
+              </a>
             </div>
             <div className="flex flex-row pt-12 md:flex-col justify-center md:pt-0 md:pl-12">
-              <InstagramSVG className="h-10 w-10 mx-6" />
-              <MediumSVG className="h-10 w-10 mx-6 md:mt-8" />
-              <LinkedInSVG className="h-10 w-10 mx-6 md:mt-8" />
+              <a href="https://www.instagram.com/punuq/" target="_blank">
+                <InstagramSVG className="h-10 w-10 mx-6" />
+              </a>
+              <a href="https://medium.com/@pantitas" target="_blank">
+                <MediumSVG className="h-10 w-10 mx-6 md:mt-8" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/pantita-suksa-nga-549523148/"
+                target="_blank"
+              >
+                <LinkedInSVG className="h-10 w-10 mx-6 md:mt-8" />
+              </a>
             </div>
           </div>
         </div>
