@@ -24,7 +24,7 @@ const IndexPage = ({ data }: PageProps) => {
       <section>
         <div className="flex flex-col items-center pt-8 px-4 md:flex-row space-between md:h-auto md:pt-16 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
           <img
-            src="/images/logo.png"
+            src="/images/pantitas.png"
             className="profile w-48 h-48 md:w-64 md:h-64"
             alt="logo"
           />

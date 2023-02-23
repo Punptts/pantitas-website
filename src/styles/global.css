@@ -48,12 +48,16 @@ body {
   border-radius: 50%;
 }
 
-/* Markdown */
-
+/* Markdown About */
 .about h1 {
-  @apply text-4xl font-bold text-red-500 leading-relaxed scroll-mt-16 lg:scroll-mt-0;
+  @apply text-3xl font-bold text-neutral-900 leading-relaxed scroll-mt-16 lg:scroll-mt-0;
 }
 
+.about a {
+  @apply underline;
+}
+
+/* Markdown */
 .markdown h1 {
   @apply text-4xl font-bold text-neutral-900 leading-relaxed my-6 scroll-mt-16 lg:scroll-mt-0;
 }

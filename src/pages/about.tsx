@@ -7,17 +7,24 @@ const About = ({ data }: PageProps) => {
   const html = data.markdownRemark.html;
   return (
     <Layout>
-      <div className="pt-8 px-4 md:flex-row space-between md:h-auto md:pt-16 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
-        <div className="flex flex-row pb-32">
-          <div className="section h-40 w-full bg-black mx-4 px-8"></div>
-          <div className="section w-full mx-4 px-8">
-            <div
-              dangerouslySetInnerHTML={{
-                __html: html || "<div />",
-              }}
-              className="about"
-            />
+      <div className="pt-8 px-4 md:flex-row space-between md:h-auto md:pt-8 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
+        <p className="text-3xl pb-6 font-bold">About me</p>
+        <div className="flex flex-col md:flex-row pb-32">
+          <div className="md:mr-16">
+            <div className="section w-full leading-relaxed">
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: html || "<div />",
+                }}
+                className="about"
+              />
+            </div>
           </div>
+          <img
+            src="/images/pantitas.png"
+            className="hidden md:block md:w-96 md:h-96"
+            alt="logo"
+          />
         </div>
       </div>
     </Layout>
