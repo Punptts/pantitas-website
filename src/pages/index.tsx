@@ -38,7 +38,7 @@ const IndexPage = ({ data }: PageProps) => {
                 I am a Ux/Ui Designer, who is always curious and hungry for an
                 adventure of designing things.
               </p>
-              <a href="http://localhost:8000/about/">
+              <a href="https://pantitas.com/about/">
                 <Button title="About Me" />
               </a>
             </div>
