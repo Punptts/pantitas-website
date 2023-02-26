@@ -11,15 +11,12 @@ const MarkdownTemplate = ({ data }: MarkdownTemplateProps) => {
 
   return (
     <Layout>
-      <section className="relative px-4 md:px-6 lg:px-16 max-w-5xl mx-auto">
-        <h1 className="font-bold text-2xl lg:text-3xl text-neutral-900">
+      <section className="relative px-4 pt-4 md:px-8 lg:px-32 max-w-5xl mx-auto">
+        <h1 className="font-bold text-2xl md:text-3xl text-neutral-900">
           {title}
         </h1>
-        {timeline && (
-          <h2 className="font-bold text-2xl">TIMELINE: {timeline}</h2>
-        )}
-        <h2 className="text-md text-neutral-600 mt-2">{date}</h2>
-        <div className="aspect-w-16 aspect-h-9 mt-8">
+        <h2 className="text-md text-neutral-600 mt-4">{date}</h2>
+        <div className="aspect-w-16 aspect-h-9 my-10">
           <img
             src={cover}
             alt="cover-img"
@@ -45,7 +42,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         cover
-        date(formatString: "MMM DD, YYYY")
+        date(formatString: "DD/MM/YYYY")
         timeline
       }
     }
