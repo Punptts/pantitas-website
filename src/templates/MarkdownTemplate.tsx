@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql, PageProps } from "gatsby";
 import Layout from "../components/Layout";
-import { describe } from "node:test";
 
 type MarkdownTemplateProps = PageProps;
 
@@ -13,11 +12,11 @@ const MarkdownTemplate = ({ data }: MarkdownTemplateProps) => {
   return (
     <Layout>
       <section className="relative px-4 pt-2 md:px-8 lg:px-32 max-w-5xl mx-auto">
-        <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl text-neutral-900">
+        <h1 className="font-bold text-3xl lg:text-4xl text-neutral-900">
           {title}
         </h1>
         <div className="flex items-center space-x-2 mt-4">
-          <div className="border-l-2 border-l-neutral-900 rounded-md h-6" />
+          <div className="border-l-2 border-l-neutral-900 rounded-md h-10" />
           <h2 className="text-lg text-neutral-900">{description}</h2>
         </div>
         <h2 className="text-md text-neutral-600 mt-4">{date}</h2>

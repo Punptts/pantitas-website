@@ -28,10 +28,10 @@ export default function BlogCard({
         <span className="text-sm text-neutral-900">{createdAt}</span>
       </div>
       <div>
-        <h2 className="text-lg line-clamp-2 font-medium text-neutral-900 pt-2">
+        <h2 className="text-xl line-clamp-2 font-bold text-neutral-900 pt-2">
           {title}
         </h2>
-        <span className="text-sm line-clamp-2 font-normal text-neutral-600 pt-2">
+        <span className="text-md line-clamp-2 font-normal text-neutral-600 pt-2">
           {desc}
         </span>
       </div>
