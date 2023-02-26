@@ -43,7 +43,10 @@ const IndexPage = ({ data }: PageProps) => {
               </a>
             </div>
             <div className="flex flex-row pt-12 md:flex-col justify-center md:pt-0 md:pl-12">
-              <a href="https://www.instagram.com/punuq/" target="_blank">
+              <a
+                href="https://www.instagram.com/roadtofullstackdesigner/"
+                target="_blank"
+              >
                 <InstagramSVG className="h-10 w-10 mx-6" />
               </a>
               <a href="https://medium.com/@pantitas" target="_blank">
