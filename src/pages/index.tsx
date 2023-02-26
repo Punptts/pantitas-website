@@ -34,9 +34,9 @@ const IndexPage = ({ data }: PageProps) => {
               <p className="text-4xl text-center font-semibold pt-5 lg:text-5xl lg:text-left">
                 Pantita Suksa-nga
               </p>
-              <p className="text-lg text-center py-5 text-neutral-600 lg:text-xl md:text-left">
-                I am a Ux/Ui Designer, who is always curious and hungry for an
-                adventure of designing things.
+              <p className="text-lg text-center py-6 text-neutral-600 leading-relax lg:text-xl md:text-left">
+                I am a Ux/UI designer who is constantly intrigued and eager for
+                the challenge of designing new things.
               </p>
               <a href="https://pantitas.com/about/">
                 <Button title="About Me" />

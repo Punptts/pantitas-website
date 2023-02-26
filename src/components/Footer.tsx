@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-item">
         <img className="global-logo" src="/images/logo.png" alt="logo" />
         <p>Explore · Research · Design</p>
-        <p>2022 I © Pantitas</p>
+        <p>2023 I © Pantitas</p>
       </div>
     </footer>
   );
