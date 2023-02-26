@@ -88,7 +88,8 @@ const IndexPage = ({ data }: PageProps) => {
       <section>
         <div className="py-32 px-4 md:px-6 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
           <SectionHeader title="All Projects" />
-          <div className="flex flex-col justify-between pt-10">
+          <h1 className="flex justify-center text-lg pt-20">Coming soon!</h1>
+          {/* <div className="flex flex-col justify-between pt-10">
             {allProjects.map(({ node }: any, key: any) => {
               const { frontmatter } = node;
               const { title, description, cover, timeline, slug } = frontmatter;
@@ -103,7 +104,7 @@ const IndexPage = ({ data }: PageProps) => {
                 </Link>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </section>
     </Layout>
@@ -124,7 +125,7 @@ export const query = graphql`
             description
             cover
             slug
-            date(formatString: "YYYY MMMM DD")
+            date(formatString: "DD/MM/YYYY")
           }
         }
       }

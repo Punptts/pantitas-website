@@ -1,22 +1,27 @@
 import React from "react";
 import { graphql, PageProps } from "gatsby";
 import Layout from "../components/Layout";
+import { describe } from "node:test";
 
 type MarkdownTemplateProps = PageProps;
 
 const MarkdownTemplate = ({ data }: MarkdownTemplateProps) => {
   /* @ts-ignore */
   const { html, frontmatter } = data.markdownRemark || {};
-  const { title, cover, date, timeline } = frontmatter || {};
+  const { title, cover, date, description } = frontmatter || {};
 
   return (
     <Layout>
-      <section className="relative px-4 pt-4 md:px-8 lg:px-32 max-w-5xl mx-auto">
-        <h1 className="font-bold text-2xl md:text-3xl text-neutral-900">
+      <section className="relative px-4 pt-2 md:px-8 lg:px-32 max-w-5xl mx-auto">
+        <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl text-neutral-900">
           {title}
         </h1>
+        <div className="flex items-center space-x-2 mt-4">
+          <div className="border-l-2 border-l-neutral-900 rounded-md h-6" />
+          <h2 className="text-lg text-neutral-900">{description}</h2>
+        </div>
         <h2 className="text-md text-neutral-600 mt-4">{date}</h2>
-        <div className="aspect-w-16 aspect-h-9 my-10">
+        <div className="my-10">
           <img
             src={cover}
             alt="cover-img"
@@ -43,7 +48,7 @@ export const pageQuery = graphql`
         title
         cover
         date(formatString: "DD/MM/YYYY")
-        timeline
+        description
       }
     }
   }

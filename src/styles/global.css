@@ -94,3 +94,31 @@ body {
 .markdown strong {
   @apply font-bold;
 }
+
+.markdown a {
+  @apply underline;
+}
+
+.markdown img {
+  @apply w-full;
+}
+
+.markdown blockquote > p {
+  @apply my-0;
+}
+
+.markdown blockquote > blockquote {
+  @apply ml-4 mt-4 border-l-2;
+}
+
+.markdown ul {
+  @apply ml-8 list-disc text-base font-normal text-neutral-900 marker:text-neutral-900;
+}
+
+.markdown ol {
+  @apply ml-8 list-decimal text-base font-normal text-neutral-900 marker:text-neutral-900;
+}
+
+.markdown hr {
+  @apply my-6 border-0 bg-neutral-200 h-px;
+}
