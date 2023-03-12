@@ -20,7 +20,7 @@ const MarkdownTemplate = ({ data }: MarkdownTemplateProps) => {
           <h2 className="text-lg text-neutral-900">{description}</h2>
         </div>
         <h2 className="text-md text-neutral-600 mt-4">{date}</h2>
-        <div className="my-10">
+        <div className="my-8">
           <img
             src={cover}
             alt="cover-img"

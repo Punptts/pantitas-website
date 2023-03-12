@@ -16,8 +16,6 @@ body {
   background-position: -19px -19px;
 }
 
-/*background-image: url("/images/dotted-bg.png");/*
-
 /* Section */
 .section {
   @apply min-h-screen flex flex-col justify-between;
