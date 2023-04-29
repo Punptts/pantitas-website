@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import Button from "../components/Button";
 import BlogCard from "../components/BlogCard";
 import SectionHeader from "../components/SectionHeader";
-import ProjectCard from "../components/ProjectCard";
+// import ProjectCard from "../components/ProjectCard";
 import "../styles/index.css";
 import InstagramSVG from "../icons/instagram.inline.svg";
 import MediumSVG from "../icons/medium.inline.svg";
@@ -16,7 +16,7 @@ const IndexPage = ({ data }: PageProps) => {
   /* @ts-ignore */
   const { blogs, projects } = data;
   const { edges: allBlogs } = blogs;
-  const { edges: allProjects } = projects;
+  // const { edges: allProjects } = projects;
 
   return (
     <Layout>
