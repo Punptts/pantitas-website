@@ -60,6 +60,10 @@ body {
   @apply underline;
 }
 
+.active {
+  @apply text-red-500 font-bold;
+}
+
 /* Markdown */
 .markdown h1 {
   @apply text-4xl font-bold text-neutral-900 leading-relaxed my-6 scroll-mt-16 lg:scroll-mt-0;

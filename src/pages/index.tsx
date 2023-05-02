@@ -4,7 +4,6 @@ import Button from "../components/Button";
 import BlogCard from "../components/BlogCard";
 import SectionHeader from "../components/SectionHeader";
 // import ProjectCard from "../components/ProjectCard";
-import "../styles/index.css";
 import InstagramSVG from "../icons/instagram.inline.svg";
 import MediumSVG from "../icons/medium.inline.svg";
 import LinkedInSVG from "../icons/linkedin.inline.svg";
@@ -13,8 +12,7 @@ import { graphql, PageProps, Link } from "gatsby";
 type IndexPage = PageProps;
 
 const IndexPage = ({ data }: PageProps) => {
-  /* @ts-ignore */
-  const { blogs, projects } = data;
+  const { blogs, projects } = data as any;
   const { edges: allBlogs } = blogs;
   // const { edges: allProjects } = projects;
 
@@ -82,9 +80,11 @@ const IndexPage = ({ data }: PageProps) => {
               );
             })}
           </div>
-          {/* <div className="text-center pt-4">
-            <Button title="See More" />
-          </div> */}
+          <div className="text-center pt-4">
+            <Link to="/blog">
+              <Button title="See More" />
+            </Link>
+          </div>
         </div>
       </section>
       {/* Section 1: ProjectCards */}
@@ -120,6 +120,8 @@ export const query = graphql`
   query IndexPage {
     blogs: allMarkdownRemark(
       filter: { frontmatter: { slug: { regex: "/blog/" } } }
+      sort: [{ frontmatter: { date: DESC } }]
+      limit: 3
     ) {
       edges {
         node {
