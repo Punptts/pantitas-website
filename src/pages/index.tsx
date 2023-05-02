@@ -82,7 +82,7 @@ const IndexPage = ({ data }: PageProps) => {
           </div>
           <div className="text-center pt-4">
             <Link to="/blog">
-              <Button title="See More" />
+              <Button title="Explore" />
             </Link>
           </div>
         </div>

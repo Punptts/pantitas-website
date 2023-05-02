@@ -12,9 +12,8 @@ const BlogPage = ({ data }: PageProps) => {
   return (
     <Layout>
       <div className="section">
-        <div className="pt-8 px-4 md:px-6 md:pt-8 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
-          <SectionHeader title="All Experiments" />
-          <div className="flex flex-col md:flex-row flex-wrap pt-10">
+        <div className="px-4 md:px-6 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row flex-wrap pt-4 pb-28">
             {allBlogs.map(({ node }: any, key: any) => {
               const { frontmatter } = node;
               const { title, description, cover, slug, date } = frontmatter;

@@ -10,16 +10,24 @@ export default function Navbar() {
       </Link>
       <div className="flex flex-row items-center">
         <Link
-          className="navbar-item hover:text-blue-500"
+          className="navbar-item hover:text-neutral-900"
           to="/"
           activeClassName="active"
         >
-          PROJECT
+          WORK
         </Link>
-        <Link className="navbar-item" to="/blog" activeClassName="active">
+        <Link
+          className="navbar-item hover:text-neutral-900"
+          to="/blog"
+          activeClassName="active"
+        >
           BLOG
         </Link>
-        <Link className="navbar-item" to="/about" activeClassName="active">
+        <Link
+          className="navbar-item hover:text-neutral-900"
+          to="/about"
+          activeClassName="active"
+        >
           ABOUT
         </Link>
       </div>
