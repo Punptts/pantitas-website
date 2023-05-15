@@ -15,11 +15,11 @@ const MarkdownTemplate = ({ data }: MarkdownTemplateProps) => {
         <h1 className="font-bold text-3xl lg:text-4xl text-neutral-900">
           {title}
         </h1>
-        <div className="flex items-center space-x-2 mt-4">
-          <div className="border-l-2 border-l-neutral-900 rounded-md h-10" />
+        <div className="flex items-center space-x-2 mt-6">
+          <div className="border-l-2 border-l-neutral-900 rounded-md h-12" />
           <h2 className="text-lg text-neutral-900">{description}</h2>
         </div>
-        <h2 className="text-md text-neutral-600 mt-4">{date}</h2>
+        {/* <h2 className="text-md text-neutral-600 mt-4">{date}</h2> */}
         <div className="my-8">
           <img
             src={cover}

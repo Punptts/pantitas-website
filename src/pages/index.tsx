@@ -2,8 +2,8 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import Button from "../components/Button";
 import BlogCard from "../components/BlogCard";
+import ProjectCard from "../components/ProjectCard";
 import SectionHeader from "../components/SectionHeader";
-// import ProjectCard from "../components/ProjectCard";
 import InstagramSVG from "../icons/instagram.inline.svg";
 import MediumSVG from "../icons/medium.inline.svg";
 import LinkedInSVG from "../icons/linkedin.inline.svg";
@@ -14,7 +14,7 @@ type IndexPage = PageProps;
 const IndexPage = ({ data }: PageProps) => {
   const { blogs, projects } = data as any;
   const { edges: allBlogs } = blogs;
-  // const { edges: allProjects } = projects;
+  const { edges: allProjects } = projects;
 
   return (
     <Layout>
@@ -91,8 +91,7 @@ const IndexPage = ({ data }: PageProps) => {
       <section>
         <div className="py-32 px-4 md:px-6 lg:px-16 xl:px-28 2xl:px-0 max-w-7xl mx-auto">
           <SectionHeader title="All Projects" />
-          <h1 className="flex justify-center text-lg pt-20">Coming soon!</h1>
-          {/* <div className="flex flex-col justify-between pt-10">
+          <div className="flex flex-col justify-between pt-10">
             {allProjects.map(({ node }: any, key: any) => {
               const { frontmatter } = node;
               const { title, description, cover, timeline, slug } = frontmatter;
@@ -107,7 +106,7 @@ const IndexPage = ({ data }: PageProps) => {
                 </Link>
               );
             })}
-          </div> */}
+          </div>
         </div>
       </section>
     </Layout>

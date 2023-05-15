@@ -1,10 +1,20 @@
 ---
-title: Full-Stack Designer เมื่อนักออกแบบอยากลองเขียน Code ด้วยตัวเอง
-description: ปันจะเป็นFSDesigner Hola! วันนี้เราอยากจะมาขยายความ คำว่า “Full-Stack Designer” กันสักหน่อย ว่าไอ่ที่อยู่ในชื่อเพจเนี่ย มันคืออะไร ???
+title: Pantitas.com - My Personal Portfolio Website (Self Project)
+description: The objective of this website is to save my works with the concept of “The Journey Of My Experiences”.
 slug: /project/project2
-cover: /images/blogs/image2.jpeg
-timeline: 1st December - 31th December 22
+cover: /images/blogs/pantitas-web-cover.png
+timeline: 1st Apr 2023 - 30th Apr 2023
 date: 2022-12-31
 ---
 
-PROJECT 2
+![pantitas-web-1](/images/blogs/pantitas-web-1.png "pantitas-web-1")
+![pantitas-web-2](/images/blogs/pantitas-web-2.png "pantitas-web-2")
+![pantitas-web-3](/images/blogs/pantitas-web-3.png "pantitas-web-3")
+![pantitas-web-4](/images/blogs/pantitas-web-4.png "pantitas-web-4")
+![pantitas-web-5](/images/blogs/pantitas-web-5.png "pantitas-web-5")
+![pantitas-web-6](/images/blogs/pantitas-web-6.png "pantitas-web-6")
+![pantitas-web-design-1](/images/blogs/pantitas-web-design-1.png "pantitas-web-design-1")
+![pantitas-web-design-2](/images/blogs/pantitas-web-design-2.png "pantitas-web-design-2")
+![pantitas-web-design-3](/images/blogs/pantitas-web-design-3.png "pantitas-web-design-3")
+![pantitas-web-design-4](/images/blogs/pantitas-web-design-4.png "pantitas-web-design-4")
+![pantitas-web-design-5](/images/blogs/pantitas-web-design-5.png "pantitas-web-design-5")
