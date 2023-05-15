@@ -61,7 +61,7 @@ Production Trainee at [Index Creative Village](https://www.indexcreativevillage.
 
 **ESC Rennes School of Business, France**
 
-Department of Business Administration, BBA in Sales and Marketing
+Bachelor's Degree in Business Administration, BBA in Sales and Marketing
 
 2018 - 2019
 
@@ -69,7 +69,7 @@ Department of Business Administration, BBA in Sales and Marketing
 
 **Silpakorn University, Thailand**
 
-Department of International College, BBA in Event and Leisure Marketing
+Bachelor's Degree in International College, BBA in Event and Leisure Marketing
 
 2015 - 2018
 
@@ -77,6 +77,6 @@ Department of International College, BBA in Event and Leisure Marketing
 
 **Baldwin Girls' High School, India**
 
-High School Diploma
+High School Diploma in ICSE (Indian Certificate of Secondary Education)
 
 2012 - 2015
