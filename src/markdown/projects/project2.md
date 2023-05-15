@@ -18,3 +18,13 @@ date: 2022-12-31
 ![pantitas-web-design-3](/images/blogs/pantitas-web-design-3.png "pantitas-web-design-3")
 ![pantitas-web-design-4](/images/blogs/pantitas-web-design-4.png "pantitas-web-design-4")
 ![pantitas-web-design-5](/images/blogs/pantitas-web-design-5.png "pantitas-web-design-5")
+
+# Appendix
+
+This project is considered the first coding project that I have done for myself as my portfolio website and I really appreciate it. Coding is always fun and challenging for me, which is why I started [Road to Full Stack Designer](https://www.facebook.com/RoadtoFSDesigner) to explore more and more!
+
+Pantitas.com Github Repository: https://github.com/Punptts/pantitas-website
+
+PS. Big thanks for your support https://github.com/tehtrippy
+
+Peace! ✌️
