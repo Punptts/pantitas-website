@@ -3,7 +3,6 @@ export const pathPrefix = "/pantitas-website";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `pantitas-website`,
-    siteUrl: `https://www.yourdomain.tld`,
   },
 
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
@@ -42,6 +41,21 @@ const config: GatsbyConfig = {
         rule: {
           include: /\.inline\.svg$/
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Pantitas`,
+        short_name: `Pantitas`,
+        description: 'Pantitas',
+        start_url: '/',
+        background_color: `#FFFFFF`,
+        // This will impact how browsers show your PWA/website
+        // https://css-tricks.com/meta-theme-color-and-trickery/
+        theme_color: `#D9231D`,
+        display: `minimal-ui`,
+        icon: `src/images/pantitas.png`, // This path is relative to the root of the site.
       },
     },
   ],
