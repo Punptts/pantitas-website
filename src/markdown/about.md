@@ -14,7 +14,7 @@ With a marketing background, I am a self-learner who is in love with the design 
 
 <br>
 
-I'm currently working as a UxUi Designer at Tong Hua Labs, a department of a public company in Thailand. Our lab aims to drive digital innovation through a culture of experimentation to deal with a broken web and make the world wide web a better place for everyone.
+I'm currently working as a Digital Product Manager at THAM (Tong Hua Asset Management), a sub-business of a public company in Thailand.
 
 <br>
 

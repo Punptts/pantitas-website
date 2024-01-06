@@ -33,8 +33,8 @@ const IndexPage = ({ data }: PageProps) => {
                 Pantita Suksa-nga
               </p>
               <p className="text-lg text-center py-6 text-neutral-600 leading-relax lg:text-xl md:text-left">
-                I am a Ux/UI designer who is constantly intrigued and eager for
-                the challenge of designing new things.
+                I am currently a Digital Product Manager who is constantly
+                intrigued and eager for the challenge of designing new things.
               </p>
               <a href="https://pantitas.com/about/">
                 <Button title="About Me" />
