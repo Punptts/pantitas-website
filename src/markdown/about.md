@@ -29,9 +29,15 @@ Contact me via email **panpantitas@gmail.com**
 
 <br>
 
-**2021 - Present**
+**2023 - Present**
 
-UxUi Designer at [Tong Hua Labs](https://tonghualabs.com/)
+Product Manager at [THAM](https://thamc.co.th/)
+
+<br>
+
+**2021 - 2023**
+
+UxUi Designer at [Tong Hua Holding](https://tonghuaholding.com/)
 
 <br>
 

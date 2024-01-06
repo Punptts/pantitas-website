@@ -1,7 +1,7 @@
 ---
 title: Pantitas.com - My Personal Portfolio Website (Self Project)
 description: This project aims to create a safe space for my work with the concept of “The Journey Of My Experiences”.
-slug: /project/project2
+slug: /project/my-portfolio-website
 cover: /images/blogs/pantitas-web-cover.png
 timeline: 1st Apr 2023 - 30th Apr 2023
 date: 2022-12-31

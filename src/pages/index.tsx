@@ -137,6 +137,7 @@ export const query = graphql`
 
     projects: allMarkdownRemark(
       filter: { frontmatter: { slug: { regex: "/project/" } } }
+      sort: [{ frontmatter: { date: DESC } }]
     ) {
       edges {
         node {
