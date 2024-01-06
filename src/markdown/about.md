@@ -31,7 +31,7 @@ Contact me via email **panpantitas@gmail.com**
 
 **2023 - Present**
 
-Product Manager at [THAM](https://thamc.co.th/)
+Digital Product Manager at [THAM](https://thamc.co.th/)
 
 <br>
 
