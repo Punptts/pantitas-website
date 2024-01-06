@@ -21,7 +21,7 @@ const About = ({ data }: PageProps) => {
             </div>
           </div>
           <img
-            src="/images/pantitas.png"
+            src="/images/new-pantitas.png"
             className="hidden md:block md:w-96 md:h-96"
             alt="logo"
           />
