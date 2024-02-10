@@ -30,9 +30,9 @@ const About = ({ data }: PageProps) => {
             <a
               target="__blank"
               href={withPrefix("images/dotted-bg.png")}
-              className="bg-red-500 w-full text-center text-white"
+              className="w-fit px-4 py-1.5 rounded-md bg-neutral-900 text-neutral-200"
             >
-              <span>Resume</span>
+              <span>Click to Download Resume</span>
             </a>
           </div>
         </div>
