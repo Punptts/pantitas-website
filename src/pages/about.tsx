@@ -29,10 +29,10 @@ const About = ({ data }: PageProps) => {
             />
             <a
               target="__blank"
-              href={withPrefix("images/dotted-bg.png")}
+              href={withPrefix("images/pantitas-resume.pdf")}
               className="w-fit px-4 py-1.5 rounded-md bg-neutral-900 text-neutral-200"
             >
-              <span>Click to Download Resume</span>
+              <span>Download Resume</span>
             </a>
           </div>
         </div>
