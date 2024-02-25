@@ -6,6 +6,4 @@ cover: /images/blogs/ui-practice-pouchket-cover.png
 date: 2024-02-25
 ---
 
-![ui-practice-pouchket-cover-2](/images/blogs/ui-practice-pouchket-cover-2.png "ui-practice-pouchket-cover-2")
-
 ![ui-practice-pouchket-frame](/images/blogs/ui-practice-pouchket-frame.png "ui-practice-pouchket-frame")
